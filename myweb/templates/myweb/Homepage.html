@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)https://www.pythonanywhere.com/user/KPCream/files/home/KPCream/mysite/myweb/templates/myweb/Homepage.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" href="https://cdn.hipwallpaper.com/i/23/54/z8oyC6.png" type="image/x-icon">
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-left: 25px;
+        margin: 0 auto;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        animation: transitionIn 1s;
+    }
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: translateY(-60px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .container {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100%;
+        margin-top: 70px;
+    }
+
+    .header {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-left: 29%;
+    }
+
+    .section {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 25%;
+        height: auto;
+        margin-top: 220px;
+        float: left;
+    }
+
+    .footer {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: auto;
+        margin-top: 33%;
+    }
+
+    h1 {
+        font-size: 80px;
+        font-family: 'Elowen';
+        word-spacing: 40px;
+        letter-spacing: 15px;
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 40px;
+        word-spacing: 40px;
+        letter-spacing: 20px;
+        color: #ffffff;
+    }
+
+    p {
+        font-family: 'GoodUnicornRegular';
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    p1 {
+        font-family: 'GoodUnicornRegular';
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .buttonx {
+        box-shadow: rgba(0, 0, 0, 0.1) -10px 0px 20px -10px;
+        background: rgb(255, 255, 255);
+        padding: 140px 120px;
+        text-align: center;
+        font-size: 16px;
+        margin: 1000px 68px;
+        cursor: pointer;
+    }
+
+    .button {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .buttonx {
+        box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .buttonx:hover {
+        opacity: 0.85;
+    }
+
+    .buttonx1 {
+        border-radius: 11px;
+        background: url(https://images.unsplash.com/photo-1598233899757-17b2dea77bd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        background-size: cover;
+    }
+
+    .buttonx2 {
+        border-radius: 11px;
+        background: url(https://images.unsplash.com/photo-1559602580-78f1ba809b92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=680&q=80);
+        background-size: cover;
+    }
+
+    .buttonx3 {
+        border-radius: 11px;
+        background: url(https://images.unsplash.com/photo-1595855759920-86582396756a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+    }
+
+    .buttonx4 {
+        border-radius: 11px;
+        background: url(https://images.unsplash.com/photo-1584663639349-9398e7387244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+    }
+
+    .btnx {
+        background: rgb(177, 50, 50);
+        padding: 20px 40px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        float: right;
+        margin-right: 100px;
+    }
+
+    .btn {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btnx {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btn:hover {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btnx:hover {
+        opacity: 0.6;
+    }
+</style></head>
+
+
+
+<body background="https://images.unsplash.com/photo-1503788079201-4ebc62a11972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
+
+    <btn class="btn btnx">
+        <a href="/login" style="text-decoration: none">
+            <p1>Log out</p1>
+        </a>
+    </btn>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="col-md-12">
+                <h1><span style="padding-left:450px text-">Feeling Fresh</span></h1>
+            </div>
+        </div>
+
+        <p>Welcome to Feeling Fresh.... <strong>{{ user }}</strong>.</p>
+
+        <div class="section">
+            <div class="col-md-3">
+                <div class="card-body p-5">
+                    <a href="/Fruits">
+                        <buttonx class="buttonx buttonx1"></buttonx>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="col-md-3">
+                <div class="card-body p-5">
+                    <a href="/Meat">
+                        <buttonx class="buttonx buttonx2"></buttonx>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="col-md-3">
+                <div class="card-body p-5">
+                    <a href="/Vegs">
+                        <buttonx class="buttonx buttonx3"></buttonx>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="col-md-3">
+                <div class="card-body p-5">
+                    <a href="/Pong">
+                        <buttonx class="buttonx buttonx4"></buttonx>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                Welcome to my website! you can find something that you want in here such as fruits, vegetables, meat, and I will recommend you to check how it fresh.
+            </p>
+        </div>
+
+
+
+    </div>
+
+
+
+</body></html>
