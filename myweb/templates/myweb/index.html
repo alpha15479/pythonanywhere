@@ -1,159 +1,226 @@
 <!DOCTYPE html>
 <!-- saved from url=(0102)https://www.pythonanywhere.com/user/KPCream/files/home/KPCream/mysite/myweb/templates/myweb/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-<style>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        width: 50%;
-        margin-left: 25px;
-        margin: 0 auto;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="icon" href="https://previews.123rf.com/images/hvostik/hvostik1701/hvostik170100080/70049332-point-finger-silhouette-direction-black-icon-man-hand-gesture-pictogram-vector-illustration-flat-sty.jpg" type="image/x-icon">
 
-    h1 {
-        font-family: 'Elowen';
-        font-size: 50px;
-        color: #FFFFFF;
-        font-weight: bold;
-        font-style: bold;
-    }
+    </head>
 
-    p {
-        font-family: 'Elowen';
-        font-size: 20px;
-        color: #FFFFFF;
-    }
-
-    p1 {
-        font-family: 'Elowen';
-        font-size: 30px;
-        color: #FFFFFF;
-    }
-
-    p2 {
-        font-family: 'Elowen';
-        font-size: 15px;
-        color: #FFFFFF;
-    }
-
-    * {
-        box-sizing: border-box
-    }
-    /* Full-width input fields */
-
-    input[type=text],
-    input[type=password] {
-        width: 50%;
-        padding: 15px;
-        margin: 20px 20px 20px 0px;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-    }
-
-    input[type=text]:focus,
-    input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-    }
-
-    hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-        text-align: center;
-    }
-    /* Set a style for all buttons */
-
-    button {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-        opacity: 0.9;
-        text-align: center;
-        margin-bottom:20px;
-    }
-
-    button:hover {
-        opacity: 2.5;
-    }
-    /* Extra styles for the cancel button */
-
-    .registerbtn {
-        padding: 14px 20px;
-        background-color: #f44336;
-        margin-right: 100px;
-        margin-left: 100px;
-    }
-
-    .signupbtn {
-        padding: 14px 20px;
-        background-color: #34c977;
-    }
-
-    /* Float cancel and signup buttons and add an equal width */
-
-    .registerbtn,
-    .signupbtn {
-        float: left;
-        width: 30%;
-        padding: 14px 20px;
-    }
-    /* Add padding to container elements */
-
-    .container {
-        padding: 16px;
-        float: center;
-        opacity: 0.9;
-    }
-    /* Clear floats */
-
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-        text-align: center;
-    }
-    /* Change styles for cancel button and signup button on extra small screens */
-
-    @media screen and (max-width: 50px) {
-        .registerbtn,
-        .signupbtn {
-            width: 50%;
+    <style>
+        body {
+            width: 100%;
+            margin-left: 25px;
+            margin: 0 auto;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
         }
-    }
-</style></head>
+        
+        h1 {
+            font-size: 100px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: bold;
+            font-family: 'Elowen';
+        }
+        
+        p {
+            font-size: 40px;
+            color: black;
+            font-family: 'Elowen';
+        }
+        
+        .p1 {
+            font-size: 30px;
+            color: #000000;
+        }
+        
+        .p2 {
+            font-size: 15px;
+            color: #FFFFFF;
+        }
+        
+        .section {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+        
+        .section2 {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .section3 {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            margin-left: 40px;
+        }
+        
+        .section1 {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            margin-left: 10px;
+            color: #000000;
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 50%;
+            padding: 15px;
+            margin: 20px 20px 20px 0px;
+            display: inline-block;
+            border: none;
+        }
+        
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        
+        hr {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        /* Set a style for all buttons */
+        
+        button {
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+            opacity: 0.7;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+        
+        button:hover {
+            opacity: 1;
+        }
+        /* Extra styles for the cancel button */
+        
+        .registerbtn {
+            padding: 20px 90px;
+            background-color: red;
+            border: 2px;
+            border-radius: 12px;
+        }
+        
+        .logbtn {
+            padding: 20px 100px;
+            background-color: green;
+            border: 2px;
+            border-radius: 12px;
+        }
+        
+        .container {
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
+            grid-gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+        
+        @media screen and (max-width: 50px) {
+            .registerbtn,
+            .signupbtn {
+                width: 100%;
+                padding: 14px 50px;
+            }
+        }
+        
+        .container .box {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            float: left;
+            margin-left: 70px;
+            margin-top: 130px;
+        }
+    </style>
 
 
+    <body background="https://images.unsplash.com/photo-1536228891610-d27ef66f7110?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
 
-<body background="./Index_files/photo-1423483641154-5411ec9c0ddf">
+        <br><br><br><br>
+        <form action="login_active" method="post" style="width: 100%; height: 100%;">
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="section1">
+                        <h1>Feeling Fresh</h1>
+                        <p>if you wanna come in please log in or register first</p>
+                    </div>
+                    <div class="section3">
+                        <div class="box">
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/145/145866.svg" width="80px" height="80px">
+                        </div>
+                        <div class="box">
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/2353/2353677.svg" width="80px" height="80px">
+                        </div>
+                        <div class="box">
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/145/145864.svg" width="80px" height="80px">
+                        </div>
+                        <div class="box">
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/167/167750.svg" width="80px" height="80px">
+                        </div>
+                    </div>
+                </div>
 
-    <form action="/login_active" method="post" style="background-color: black; opacity: 0.8; border:3px solid #ccc">
+                <div class="col-md-6">
+                    <div class="col-md-6">
+                        <div class="section2">
+                            <div class="box">
+                                <img src="https://cdn4.iconfinder.com/data/icons/christmas-linear-icon/70/turkey-512.png" width="100px" height="100px">
+                            </div>
+                            <div class="box">
+                                <img src="https://icons.iconarchive.com/icons/icons8/ios7/512/Food-Carrot-icon.png" width="100px" height="100px">
+                            </div>
+                            <div class="box">
+                                <img src="https://cdn1.iconfinder.com/data/icons/food-solid-icons-volume-3-1/128/114-512.png" width="100px" height="100px">
+                            </div>
+                            <div class="box">
+                                <img src="https://www.flaticon.com/svg/static/icons/svg/34/34570.svg" width="100px" height="100px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section">
+                            <button type="button" class="registerbtn" onclick="document.location='myweb/signup'">Register</a></button><br><br><br>
+                            <button type="button" class="logbtn" onclick="document.location='myweb/login'">Login</button>
+                        </div>
+                    </div>
 
-        <div class="container">
-
-            <h1><span style="padding-left:240px">Feeling Fresh</span></h1>
-            <p><span style="padding-left:180px">if you wanna come in please log in or register first</span></p>
-
-            <br>
-            <div class="clearfix" text-align:="" center;="">
-                <button type="button" class="registerbtn"><a href="https://www.pythonanywhere.com/user/KPCream/files/home/KPCream/mysite/myweb/templates/myweb/sign_up" style="text-decoration: none">Register</a></button>
-                <button type="button" class="signupbtn"><a href="https://www.pythonanywhere.com/user/KPCream/files/home/KPCream/mysite/myweb/templates/myweb/login" style="text-decoration: none">Login</a></button>
+                </div>
             </div>
 
-        </div>
+        </form>
 
-    </form>
+    </body>
 
-
-
-</body></html>
+</html>

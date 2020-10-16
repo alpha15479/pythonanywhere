@@ -1,13 +1,18 @@
 from django.urls import path
-from django.contrib.auth import views as aunt_views
 from . import views
 from . import *
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('login',views.login_page),
+    path('index', views.index, name='index'),
+    path('login', views.login_page),
+    path('Homepage', views.Homepage),
     path('signup', views.signup, name='signup'),
     path('logout',views.logout, name='logout'),
-    path('login_active',views.login_active),
+    path('Meat',views.Meat, name='Meat'),
+    path('Fruits',views.Fruits, name='Fruits'),
+    path('Vegs',views.Vegs, name='Vegs'),
+    path('Pong',views.Pong, name='Pong'),
+    path('login_active',views.login_active, name='login_active'),
 
 ]

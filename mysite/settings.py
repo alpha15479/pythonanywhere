@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [u'KPCream.pythonanywhere.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myweb',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +69,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL ='login'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -118,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = u'/home/KPCream/mysite/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = u'/home/KPCream/mysite/static'

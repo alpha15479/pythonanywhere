@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0103)https://www.pythonanywhere.com/user/KPCream/files/home/KPCream/mysite/myweb/templates/myweb/signup.html -->
+<!-- saved from url=(0102)https://www.pythonanywhere.com/user/KPCream/files/home/KPCream/mysite/myweb/templates/myweb/index.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
+    <title>Sign Up</title>
+    <link rel="icon" href="https://previews.123rf.com/images/hvostik/hvostik1701/hvostik170100080/70049332-point-finger-silhouette-direction-black-icon-man-hand-gesture-pictogram-vector-illustration-flat-sty.jpg" type="image/x-icon">
+
+</head>
+
 <style>
+
     body {
         font-family: Arial, Helvetica, sans-serif;
         width: 50%;
@@ -14,6 +20,9 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
 
     h1 {
@@ -77,8 +86,7 @@
         cursor: pointer;
         opacity: 0.9;
         text-align: center;
-        border-radius: 20px;
-        margin-bottom: 20px;
+        margin-bottom:20px;
     }
 
     button:hover {
@@ -97,6 +105,7 @@
         padding: 14px 20px;
         background-color: #34c977;
     }
+
     /* Float cancel and signup buttons and add an equal width */
 
     .registerbtn,
@@ -128,23 +137,24 @@
             width: 50%;
         }
     }
-</style></head>
+</style>
 
 
-
-<body background="https://images.unsplash.com/photo-1600589203315-301b574127f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80">
+<body background="https://images.unsplash.com/photo-1445282768818-728615cc910a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <form action="/signup" method="post" style="border-radius: 20px; background-color: black; opacity: 0.8; border:3px solid #ccc">
+
+    <form action="signup" method="post" style="background-color: black; opacity: 0.8; border:3px solid #ccc">
 
         <div class="container">
 
             <h1><span style="padding-left:240px">Feeling Fresh</span></h1>
             <p><span style="padding-left:180px">if you wanna come in please log in or register first</span></p>
 
+            <br>
             <div class="clearfix" text-align:="" center;="">
-                <button type="button" class="registerbtn"><a href="/Homepage" style="text-decoration: none">Homepage</a></button>
-                <button type="button" class="signupbtn"><a href="/index" style="text-decoration: none">Log out</a></button>
+                <button type="button" class="registerbtn" onclick= "document.location='myweb/index'">Cancel</button>
+                <button type="button" class="signupbtn" onclick= "document.location='myweb/signup'">Sign Up</button>
             </div>
 
         </div>

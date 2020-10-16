@@ -39,6 +39,20 @@ def logout(req):
 def Homepage(request):
     return render(request,'myweb/Homepage.html')
 
-def login_page(req):
-    return render(req,'myweb/login.html')
+def login_page(request):
+    return render(request,'myweb/login.html')
+
+def Vegs(request):
+    return render(request,'myweb/Vegs.html')
+
+def Fruits(request):
+    return render(request,'myweb/Fruits.html')
+
+def Pong(request):
+    return render(request,'myweb/Pong.html')
+
+def Meat(request):
+    return render(request,'myweb/Meat.html')
+
+
 

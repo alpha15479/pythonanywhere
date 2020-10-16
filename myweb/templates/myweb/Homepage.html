@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0105)https://www.pythonanywhere.com/user/KPCream/files/home/KPCream/mysite/myweb/templates/myweb/Homepage.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="icon" href="https://cdn.hipwallpaper.com/i/23/54/z8oyC6.png" type="image/x-icon">
+
+</head>
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +18,9 @@
         background-attachment: fixed;
         background-size: cover;
         animation: transitionIn 1s;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
 
     @keyframes transitionIn {
@@ -161,14 +166,14 @@
     .btnx:hover {
         opacity: 0.6;
     }
-</style></head>
+</style>
 
 
 
 <body background="https://images.unsplash.com/photo-1503788079201-4ebc62a11972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
 
     <btn class="btn btnx">
-        <a href="/login" style="text-decoration: none">
+        <a href="login" style="text-decoration: none">
             <p1>Log out</p1>
         </a>
     </btn>
@@ -186,27 +191,21 @@
         <div class="section">
             <div class="col-md-3">
                 <div class="card-body p-5">
-                    <a href="/Fruits">
-                        <buttonx class="buttonx buttonx1"></buttonx>
-                    </a>
+                        <a href="Fruits"><buttonx class="buttonx buttonx1"></buttonx></a>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="col-md-3">
                 <div class="card-body p-5">
-                    <a href="/Meat">
-                        <buttonx class="buttonx buttonx2"></buttonx>
-                    </a>
+                        <a href="Meat"><buttonx class="buttonx buttonx2"></buttonx></a>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="col-md-3">
                 <div class="card-body p-5">
-                    <a href="/Vegs">
-                        <buttonx class="buttonx buttonx3"></buttonx>
-                    </a>
+                        <a href="Vegs"><buttonx class="buttonx buttonx3"></buttonx></a>
                 </div>
             </div>
         </div>
@@ -214,9 +213,7 @@
         <div class="section">
             <div class="col-md-3">
                 <div class="card-body p-5">
-                    <a href="/Pong">
-                        <buttonx class="buttonx buttonx4"></buttonx>
-                    </a>
+                        <a href="Pong"><buttonx class="buttonx buttonx4"></buttonx></a>
                 </div>
             </div>
         </div>
@@ -227,10 +224,7 @@
             </p>
         </div>
 
-
-
     </div>
 
-
-
-</body></html>
+</body>
+</html>
