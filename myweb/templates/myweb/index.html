@@ -25,31 +25,31 @@
             -moz-background-size: cover;
             -o-background-size: cover;
         }
-        
+
         h1 {
             font-size: 100px;
-            color: rgb(0, 0, 0);
+            color: #000;
             font-weight: bold;
             font-style: bold;
             font-family: 'Elowen';
         }
-        
+
         p {
             font-size: 40px;
-            color: black;
+            color: white;
             font-family: 'Elowen';
         }
-        
+
         .p1 {
             font-size: 30px;
-            color: #000000;
+            color: #000;
         }
-        
+
         .p2 {
             font-size: 15px;
-            color: #FFFFFF;
+            color: #000;
         }
-        
+
         .section {
             width: 100%;
             position: relative;
@@ -57,14 +57,14 @@
             overflow: hidden;
             margin-top: 70px;
         }
-        
+
         .section2 {
             width: 100%;
             position: relative;
             text-align: center;
             overflow: hidden;
         }
-        
+
         .section3 {
             width: 100%;
             position: relative;
@@ -72,19 +72,18 @@
             overflow: hidden;
             margin-left: 40px;
         }
-        
+
         .section1 {
             position: relative;
             text-align: center;
             overflow: hidden;
             margin-left: 10px;
-            color: #000000;
         }
-        
+
         * {
             box-sizing: border-box
         }
-        
+
         input[type=text],
         input[type=password] {
             width: 50%;
@@ -93,19 +92,19 @@
             display: inline-block;
             border: none;
         }
-        
+
         input[type=text]:focus,
         input[type=password]:focus {
             background-color: #ddd;
             outline: none;
         }
-        
+
         hr {
             margin-bottom: 25px;
             text-align: center;
         }
         /* Set a style for all buttons */
-        
+
         button {
             background-color: #4CAF50;
             border: none;
@@ -115,26 +114,26 @@
             margin-bottom: 20px;
             border-radius: 12px;
         }
-        
+
         button:hover {
             opacity: 1;
         }
         /* Extra styles for the cancel button */
-        
+
         .registerbtn {
             padding: 20px 90px;
-            background-color: red;
+            background-color:red;
             border: 2px;
             border-radius: 12px;
         }
-        
+
         .logbtn {
             padding: 20px 100px;
             background-color: green;
             border: 2px;
             border-radius: 12px;
         }
-        
+
         .container {
             height: auto;
             margin: auto;
@@ -145,7 +144,7 @@
             box-sizing: border-box;
             font-weight: bold;
         }
-        
+
         @media screen and (max-width: 50px) {
             .registerbtn,
             .signupbtn {
@@ -153,19 +152,28 @@
                 padding: 14px 50px;
             }
         }
-        
+
+        .container .box1 {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            float: left;
+            margin-left: 70px;
+            margin-top: 170px;
+        }
+
         .container .box {
             position: relative;
             text-align: center;
             overflow: hidden;
             float: left;
             margin-left: 70px;
-            margin-top: 130px;
+            margin-top: 80px;
         }
     </style>
 
 
-    <body background="https://images.unsplash.com/photo-1536228891610-d27ef66f7110?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+    <body background="https://images.unsplash.com/photo-1513966632800-30d6bfec9a03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80">
 
         <br><br><br><br>
         <form action="login_active" method="post" style="width: 100%; height: 100%;">
@@ -173,7 +181,7 @@
             <div class="container">
                 <div class="col-md-6">
                     <div class="section1">
-                        <h1>Feeling Fresh</h1>
+                        <h1 style="color: #fff;">Feeling Fresh</h1>
                         <p>if you wanna come in please log in or register first</p>
                     </div>
                     <div class="section3">
@@ -195,18 +203,19 @@
                 <div class="col-md-6">
                     <div class="col-md-6">
                         <div class="section2">
-                            <div class="box">
-                                <img src="https://cdn4.iconfinder.com/data/icons/christmas-linear-icon/70/turkey-512.png" width="100px" height="100px">
-                            </div>
-                            <div class="box">
-                                <img src="https://icons.iconarchive.com/icons/icons8/ios7/512/Food-Carrot-icon.png" width="100px" height="100px">
-                            </div>
-                            <div class="box">
+                            <div class="box1">
                                 <img src="https://cdn1.iconfinder.com/data/icons/food-solid-icons-volume-3-1/128/114-512.png" width="100px" height="100px">
                             </div>
-                            <div class="box">
+                            <div class="box1">
                                 <img src="https://www.flaticon.com/svg/static/icons/svg/34/34570.svg" width="100px" height="100px">
                             </div>
+                            <div class="box1">
+                                <img src="https://cdn4.iconfinder.com/data/icons/christmas-linear-icon/70/turkey-512.png" width="100px" height="100px">
+                            </div>
+                            <div class="box1">
+                                <img src="https://icons.iconarchive.com/icons/icons8/ios7/512/Food-Carrot-icon.png" width="100px" height="100px">
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -215,8 +224,9 @@
                             <button type="button" class="logbtn" onclick="document.location='myweb/login'">Login</button>
                         </div>
                     </div>
-
                 </div>
+
+
             </div>
 
         </form>
