@@ -17,29 +17,33 @@
         background-attachment: fixed;
         background-size: cover;
     }
-    
+
     h1 {
         font-size: 60px;
         font-weight: bold;
         font-style: bold;
+        color: #000;
     }
-    
+
     p {
         font-size: 20px;
+        color: #000;
     }
-    
+
     p1 {
-        font-size: 15px;
+        font-size: 18px;
+        color: #000;
     }
-    
+
     p2 {
         font-size: 15px;
+        color: #000;
     }
-    
+
     * {
         box-sizing: border-box
     }
-    
+
     input[type=text],
     input[type=password] {
         width: 30%;
@@ -48,12 +52,12 @@
         display: inline-block;
         border: none;
         background: #000000;
-        color: #ffffff;
+        color: #000;
         text-align: center;
         cursor: pointer;
         border-radius: 20px;
     }
-    
+
     input[type=text]:focus,
     input[type=password]:focus {
         background: #000000;
@@ -63,15 +67,15 @@
         color: #ffffff;
         border-radius: 20px;
     }
-    
+
     hr {
-        color: #ffffff;
+        color: #000;
         text-align: center;
         border-radius: 20px;
         cursor: pointer;
     }
     /* Set a style for all buttons */
-    
+
     button {
         background-color: #4CAF50;
         color: white;
@@ -79,22 +83,23 @@
         cursor: pointer;
         opacity: 1;
         text-align: center;
+        color: #fff;
     }
-    
+
     button:hover {
         opacity: 0.8;
     }
     /* Extra styles for the cancel button */
-    
+
     .cancelbtn {
         padding: 15px 50px;
         background-color: red;
         border-radius: 20px;
         margin-bottom:50px;
         border:1px;
-        
+        color: #fff;
     }
-    
+
     .signupbtn {
         padding: 15px 50px;
         background-color: green;
@@ -103,13 +108,14 @@
         margin-left:80px;
         margin-bottom:50px;
         cursor: pointer;
+        color: #fff;
     }
 
     .container {
         float: center;
     }
     /* Clear floats */
-    
+
     .section {
         width: 100%;
         position: relative;
@@ -118,7 +124,7 @@
     }
 </style>
 
-<body style="background-image: url(https://images.unsplash.com/photo-1551375048-9c5c503d0d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
+<body style="background-image: url(https://images.unsplash.com/photo-1549483532-d1945e6c48af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80);">
 
     <br><br><br><br><br><br>
 
@@ -151,7 +157,7 @@
             </div>
 
             <div class="col-md-4">
-                <button type="button" class="cancelbtn"><a href="index" style="text-decoration: none">Cancel</a> </button> {% if form.errors %}
+                <button type="button" class="cancelbtn"><a href="index" style="text-decoration: none; color: #fff;">Cancel</a> </button> {% if form.errors %}
                 <p> Try again </p>{% endif %}
 
                 <input type="submit" class="signupbtn" value="Login">

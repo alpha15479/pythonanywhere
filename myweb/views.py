@@ -65,7 +65,7 @@ def show_page(request):
 def login_page(request):
     return render(request,'myweb/login.html')
 
-def add(request):
+def add_page(request):
     return render(request,'myweb/add.html')
 
 def Vegs(request):
