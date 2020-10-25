@@ -56,15 +56,66 @@
         background-attachment: fixed;
         background-size: cover;
     }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        width:150px;
+        height:40px;
+        border: none;
+        cursor: pointer;
+        opacity: 1;
+        text-align: center;
+        color: #fff;
+    }
+    .section {
+        text-align: center;
+        color: #fff;
+    }
+    .btnx {
+        background: rgb(177, 50, 50);
+        padding: 14px 35px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .btn {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btnx {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btn:hover {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btnx:hover {
+        opacity: 0.6;
+    }
 </style>
 
 <body background="https://images.unsplash.com/photo-1518933782867-2454b728cb5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80">
 
-    <form method="post" action="add_model">
-    {% csrf_token %}
-    {{form}}
+<div class="container">
+    <btn class="btn btnx">
+        <a href="Homepage" style="text-decoration: none">
+            <p1>back to homepage</p1>
+        </a>
+    </btn>
+    <h1>Add Data</h1>
+    <br><br><br><br>
+    <form method="post">
+        {% csrf_token %}
+        {{form}}
 
-    <button type="submit" class="btn btn-default">Add data</button>
+        <div class="section">
+            <button type="submit" class="btn btn-default">Add data</button>
+        </div>
     </form>
+</div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Log in</title>
+    <title>Show all comments</title>
     <link rel="icon" href="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/10259377741543238901-512.png" type="image/x-icon">
 </head>
 
@@ -64,12 +64,12 @@
         cursor: pointer;
         outline: none;
         text-align: center;
-        color: #fff;
+        color: #ffffff;
         border-radius: 20px;
     }
 
     hr {
-        color: #fff;
+        color: #000;
         text-align: center;
         border-radius: 20px;
         cursor: pointer;
@@ -112,7 +112,10 @@
     }
 
     .container {
-        float: center;
+        width:70%;
+        float: left;
+        text-align:center;
+        margin-left:15%;
     }
     /* Clear floats */
 
@@ -122,50 +125,83 @@
         text-align: center;
         overflow: hidden;
     }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even)
+    {background-color: #f2f2f2; }
+
+    th {
+      background-color: pink;
+      color: black;
+    }
+    .btnx {
+        background: rgb(177, 50, 50);
+        padding: 14px 35px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .btn {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btnx {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btn:hover {
+        box-shadow: rgb(177, 50, 50);
+    }
+
+    .btnx:hover {
+        opacity: 0.6;
+    }
 </style>
 
-<body style="background-image: url(https://images.unsplash.com/photo-1549483532-d1945e6c48af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80);">
+<body style="background-image: url(https://images.unsplash.com/photo-1585910513592-9dd2d2232975?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80);">
 
-    <br><br><br><br><br><br>
+    <btn class="btn btnx">
+        <a href="Homepage" style="text-decoration: none">
+            <p1>back to homepage</p1>
+        </a>
+    </btn>
+    <br><br><br><br>
 
-    <form action="login_active" method="POST">
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+      <h1 class="font-weight-light">All comments</h1>
+      <br>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Type</th>
+          <th>Name</th>
+          <th>Comment</th>
+          {% for i in show %}
+        </tr>
 
-        {% csrf_token %}
+        <tr>
+          <td>{{ i.id }}</td>
+          <td>{{ i.title}}</td>
+          <td>{{ i.text }}</td>
+          <td>{{ i.notes }}</td>
+          {% endfor %}
+        </tr>
 
-        <div class="container">
-            <div class="col-md-4">
-                <div class="section">
-                    <h1>Log in</h1>
-                </div>
-                <div class="section">
-                    <p>Please fill in this form to log in</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="section">
-                    <div class="col-md-2">
-                        <label for="username"><p1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Username &nbsp;&nbsp;&nbsp;</p1></label>
-                        <input type="text" placeholder="Enter username" name="username" id="username" required=""><br>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="password"><p1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Password &nbsp;&nbsp;&nbsp;</p1></label>
-                        <input type="password" placeholder="Enter Password" name="password" id="password" required=""><br>
-                        <p>By creating an account you agree to my</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <button type="button" class="cancelbtn"><a href="index" style="text-decoration: none; color: #fff;">Cancel</a> </button> {% if form.errors %}
-                <p> Try again </p>{% endif %}
-
-                <input type="submit" class="signupbtn" value="Login">
-
-            </div>
-
-        </div>
-    </form>
+      </table>
+    </div>
+  </div>
 </body>
 
 </html>

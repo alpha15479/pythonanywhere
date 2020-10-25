@@ -4,11 +4,17 @@ from django.contrib.auth import login
 from django.contrib.auth import logout as logout_user
 from django.contrib.auth import authenticate
 from myweb.forms import MyCommentForm
-from django import forms
 from django.utils import timezone
+from .models import Comment
+
+def add_page(request):
+    return render(request,'myweb/add.html')
+
+def show(testrequestreq):
+    show = Comment.objects.all()
+    return render(testrequestreq ,'myweb/show.html' ,{'show':show})
 
 def add_model(request):
-
     if request.method == "POST":
         form = MyCommentForm(request.POST)
         if form.is_valid():
@@ -16,12 +22,9 @@ def add_model(request):
             model_instance.timestamp = timezone.now()
             model_instance.save()
             return redirect('/')
-
     else:
-
         form = MyCommentForm()
-
-        return render(request, "add.html", {'form': form})
+        return render(request, "myweb/add.html", {'form': form})
 
 def index(request):
     return render(request,'myweb/index.html')
@@ -59,14 +62,11 @@ def logout(req):
 def Homepage(request):
     return render(request,'myweb/Homepage.html')
 
-def show_page(request):
-    return render(request,'myweb/show.html')
-
 def login_page(request):
     return render(request,'myweb/login.html')
 
-def add_page(request):
-    return render(request,'myweb/add.html')
+def pong(request):
+    return render(request,'myweb/pong.html')
 
 def Vegs(request):
     return render(request,'myweb/Vegs.html')
